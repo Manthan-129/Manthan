@@ -13,6 +13,7 @@ const Product = () => {
 
   const fetchProductData= async ()=>{
     const product= products.find((item)=> item._id === productId);
+    if(!product) return;
     setImage(product.image[0]);
     setProductData(product);
   }

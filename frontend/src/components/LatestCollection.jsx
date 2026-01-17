@@ -5,11 +5,12 @@ import ProductItems from './ProductItems'
 
 const LatestCollection = () => {
     const {products}= React.useContext(ShopContext);
-    console.log(products);
     const [latestProduct, setLatestProduct]= React.useState([]);
+
     React.useEffect(()=>{
         setLatestProduct(products.slice(0,10));
-    },[])
+    },[products])
+
   return (
     <div className="my-10">
         <div className="text-center py-8 text-3xl">

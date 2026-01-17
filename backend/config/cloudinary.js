@@ -10,4 +10,4 @@ const connectCloudinary= ()=>{
     console.log("Cloudinary configured successfully");
 }
 
-module.exports= { connectCloudinary }
+module.exports= { connectCloudinary, cloudinary }

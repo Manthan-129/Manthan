@@ -13,7 +13,6 @@ const RelatedProducts = ({category, subCategory}) => {
         let updateProduct = [...products];
         updateProduct= updateProduct.filter((item)=> item.category === category);
         updateProduct= updateProduct.filter((item)=> item.subCategory === subCategory);
-        console.log('Related Products:', updateProduct.slice(0,4));
         setRelated(updateProduct.slice(0,4));
     }, [products, category, subCategory])
 
